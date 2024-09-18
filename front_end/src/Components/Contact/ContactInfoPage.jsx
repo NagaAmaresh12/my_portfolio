@@ -11,7 +11,8 @@ const ContactInfoPage = () => {
     // Handle form submission
     const onSubmit = async (data) => {
         try {
-            const response = await axios.post('http://localhost:5000/api/contact', data);
+            const response = await axios.post('https://my-portfolio-3-2ac0.onrender.com/api/contact', data);
+            console.log(data);
             setResponseMessage(response.data.message);
             reset(); // Reset form after submission
         } catch (error) {

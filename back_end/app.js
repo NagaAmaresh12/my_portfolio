@@ -21,7 +21,27 @@ connectDB();
 app.use(express.static('public'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(cors());
+// Define allowed origins
+const allowedOrigins = [
+  'https://my-portfolio-frontend-oqoc.onrender.com/',
+  'http://localhost:5173' // Include this if you want to allow local development
+];
+
+// CORS options
+const corsOptions = {
+  origin: function (origin, callback) {
+    if (allowedOrigins.indexOf(origin) !== -1 || !origin) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+  credentials: true
+};
+
+// Apply CORS middleware
+app.use(cors(corsOptions));
+
 
 // Session and flash middleware
 app.use(session({
@@ -40,7 +60,7 @@ app.use('/', indexRoutes);
 app.use('/api', contactRoutes);
 app.use('/admin',ipWhitelistMiddleware);
 
-const PORT = process.env.PORT ||  5000;
+const PORT = process.env.PORT ||  4000;
 
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);

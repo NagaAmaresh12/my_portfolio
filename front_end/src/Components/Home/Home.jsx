@@ -24,15 +24,15 @@ const Home = () => {
         {/* Open Graph Meta Tags */}
         <meta property="og:title" content="Naga Amaresh | Developer" />
         <meta property="og:description" content="Welcome to my portfolio website where you can see my projects and skills." />
-        <meta property="og:image" content={`https://localhost:5173/${myImage}`}  />
-        <meta property="og:url" content="https://localhost:5173/"  />
+        <meta property="og:image" content={`https://my-portfolio-frontend-oqoc.onrender.com/${myImage}`}  />
+        <meta property="og:url" content="https://my-portfolio-frontend-oqoc.onrender.com/"  />
         <meta property="og:type" content="website" />
 
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Naga Amaresh | Developer" />
         <meta name="twitter:description" content="Welcome to my portfolio website where you can see my projects and skills." />
-        <meta name="twitter:image" content={`https://localhost:5173/${myImage}`}  />
+        <meta name="twitter:image" content={`https://my-portfolio-frontend-oqoc.onrender.com/${myImage}`}  />
 
         {/* Structured Data */}
         <script type="application/ld+json">
@@ -42,7 +42,7 @@ const Home = () => {
               "@type": "Person",
               "name": "Naga Amaresh",
               "description": "Web Developer with experience in building high-quality websites and applications.",
-              "url": "http://localhost:5173",
+              "url": "https://my-portfolio-frontend-oqoc.onrender.com/",
               "sameAs": [
                 "https://linkedin.com/in/nagaamaresh",
                 "https://github.com/nagaamaresh"

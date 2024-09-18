@@ -25,15 +25,15 @@ const Archive = () => {
                 {/* Open Graph Meta Tags */}
                 <meta property="og:title" content="Naga Amaresh | Archive" />
                 <meta property="og:description" content="Browse through the archive of projects by Naga Amaresh, showcasing various works and services." />
-                <meta property="og:image" content={`https://localhost:5173/${myImage}`} /> {/* Update with a valid image URL */}
-                <meta property="og:url" content="http://localhost:5173/archive" /> {/* Update with the actual URL */}
+                <meta property="og:image" content={`https://my-portfolio-frontend-oqoc.onrender.com/${myImage}`} /> {/* Update with a valid image URL */}
+                <meta property="og:url" content="https://my-portfolio-frontend-oqoc.onrender.com/archive" /> {/* Update with the actual URL */}
                 <meta property="og:type" content="website" />
 
                 {/* Twitter Card Meta Tags */}
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:title" content="Naga Amaresh | Archive" />
                 <meta name="twitter:description" content="Browse through the archive of projects by Naga Amaresh, showcasing various works and services." />
-                <meta name="twitter:image" content={`https://localhost:5173/${myImage}`} /> {/* Update with a valid image URL */}
+                <meta name="twitter:image" content={`https://my-portfolio-frontend-oqoc.onrender.com/${myImage}`} /> {/* Update with a valid image URL */}
 
                 {/* Structured Data */}
                 <script type="application/ld+json">
@@ -43,7 +43,7 @@ const Archive = () => {
                         "@type": "Person",
                         "name": "Naga Amaresh",
                         "description": "Web Developer showcasing a variety of projects and services in the archive.",
-                        "url": "https://localhost:5173",
+                        "url": "https://my-portfolio-frontend-oqoc.onrender.com/",
                         "sameAs": [
                             "https://linkedin.com/in/nagaamaresh",
                             "https://github.com/nagaamaresh"

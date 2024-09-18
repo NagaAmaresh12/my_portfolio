@@ -1,7 +1,6 @@
 import React, { Suspense, lazy } from 'react';
 import { Helmet } from 'react-helmet';
 import Loader from '../../utils/Loader.jsx';
-import myImage from "../../assets/images/img1_portfolio.jpg";
 
 const NavBar = lazy(() => import('../../utils/NavBar'));
 
@@ -10,7 +9,7 @@ const ContactMain = lazy(() => import('./ContactMain'));
 
 const Contact = () => {
 
-  const myImage = 'https://example.com/path-to-image.jpg'; // Ensure this URL is correct
+  const myImage = "../../assets/images/img1_portfolio.jpg"; // Ensure this URL is correct
 
   return (
     <section>
@@ -23,15 +22,15 @@ const Contact = () => {
         {/* Open Graph Meta Tags */}
         <meta property="og:title" content="Naga Amaresh | Contact" />
         <meta property="og:description" content="Get in touch with Naga Amaresh, a skilled web developer, and discuss your project requirements or potential collaborations." />
-        <meta property="og:image" content={`https://localhost:5173/${myImage}`}  />
-        <meta property="og:url" content="https://localhost:5173/contact" />
+        <meta property="og:image" content={`https://my-portfolio-frontend-oqoc.onrender.com/${myImage}`}  />
+        <meta property="og:url" content="https://my-portfolio-frontend-oqoc.onrender.com/contact" />
         <meta property="og:type" content="website" />
 
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Naga Amaresh | Contact" />
         <meta name="twitter:description" content="Get in touch with Naga Amaresh, a skilled web developer, and discuss your project requirements or potential collaborations." />
-        <meta name="twitter:image" content={`https://localhost:5173/${myImage}`}  />
+        <meta name="twitter:image" content={`https://my-portfolio-frontend-oqoc.onrender.com/${myImage}`}  />
 
         {/* Structured Data */}
         <script type="application/ld+json">
@@ -41,7 +40,7 @@ const Contact = () => {
               "@type": "Person",
               "name": "Naga Amaresh",
               "description": "Web Developer with experience in building high-quality websites and applications.",
-              "url": "http://localhost:5173",
+              "url": "https://my-portfolio-frontend-oqoc.onrender.com/",
               "sameAs": [
                 "https://linkedin.com/in/nagaamaresh",
                 "https://github.com/nagaamaresh"

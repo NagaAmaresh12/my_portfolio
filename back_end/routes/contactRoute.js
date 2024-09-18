@@ -7,6 +7,7 @@ const router = express.Router();
 router.post('/contact', contactController);
 router.get('/contact', (req,res)=>{
     res.send('Get request to contact page');
+    console.log('getting the contact page');
 });
 
 module.exports = router;

@@ -20,15 +20,15 @@ const Work = () => {
         {/* Open Graph Meta Tags */}
         <meta property="og:title" content="Naga Amaresh | Work" />
         <meta property="og:description" content="Explore the projects and work of Naga Amaresh, a web developer with expertise in creating innovative solutions." />
-        <meta property="og:image" content={`https://localhost:5173/${myImage}`} /> {/* Update with a valid image URL */}
-        <meta property="og:url" content="https://localhost:5173/work" /> {/* Update with the actual URL */}
+        <meta property="og:image" content={`https://my-portfolio-frontend-oqoc.onrender.com/${myImage}`} /> {/* Update with a valid image URL */}
+        <meta property="og:url" content="https://my-portfolio-frontend-oqoc.onrender.com/work" /> {/* Update with the actual URL */}
         <meta property="og:type" content="website" />
 
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Naga Amaresh | Work" />
         <meta name="twitter:description" content="Explore the projects and work of Naga Amaresh, a web developer with expertise in creating innovative solutions." />
-        <meta name="twitter:image" content={`https://localhost:5173/${myImage}`}  /> {/* Update with a valid image URL */}
+        <meta name="twitter:image" content={`https://my-portfolio-frontend-oqoc.onrender.com/${myImage}`}  /> {/* Update with a valid image URL */}
 
         {/* Structured Data */}
         <script type="application/ld+json">
@@ -38,7 +38,7 @@ const Work = () => {
               "@type": "Person",
               "name": "Naga Amaresh",
               "description": "Web Developer with expertise in creating innovative solutions and high-quality websites.",
-              "url": "http://localhost:5173",
+              "url": "https://my-portfolio-frontend-oqoc.onrender.com/",
               "sameAs": [
                 "https://linkedin.com/in/nagaamaresh",
                 "https://github.com/nagaamaresh"
