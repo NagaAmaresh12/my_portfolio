@@ -1,0 +1,4 @@
+user-agent: *
+Disallow: /private/
+Disallow: /workinprogress/
+Sitemap: https://www.myportfolio.com/sitemap.html

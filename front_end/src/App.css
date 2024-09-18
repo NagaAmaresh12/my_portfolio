@@ -1,0 +1,21 @@
+/* .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  } */
+  
+  .magnetic-button {
+    /* height: 100%;
+    width: 100%; */
+    border: none;
+    cursor: pointer;
+    transition: cubic-bezier(0.19, 1, 0.22, 1) 1s; /* smooth effect */
+    position: relative;
+    z-index: 1;
+  }
+  
+  .magnetic-button:hover {
+    transition: transform 0.15s ease-out; /* faster when hovering */
+  }
+  
